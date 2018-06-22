@@ -1,0 +1,36 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-06-22T20:20:35+08:00
+
+====== 动态规划法 ======
+创建日期 星期五 22 六月 2018
+
+动态规划法跟分治法有点像,但是分治法在处理不同子问题时,问题处理过程中有交集,会发生重复计算,这在处理大数据时会增加大量的不必要计算开销.解决办法是使用缓冲区储存结果,为这种处理办法命个名就是动态规划法.
+
+===== 处理的问题 =====
+动态规划法(Dynamic Programming)可以处理两类问题:
+1. 重叠子问题
+2. 最佳子结构
+
+===== 具体解决方案 =====
+
+== 重叠子问题 ==
+
+在求解[[Problems_set:Fibonacci|Fibonacci]]问题时,我们使用了函数递归,但是在递归中我们可以发现,递归函数对同一问题进行了多次运算.我们试着用动态规划法解决这个问题,使时间复杂度降低.
+动态规划记录了不同阶段的子问题的求解值.有以下两种不同方式记录求解值:
+1. Memoization(top down)
+2. Tabulation (Bottom UP)
+两种方式分别由上至下和由下至上对结果进行记录.但是Memoization只是按需记录数值,相当于建立一个备忘录.而Tabulation是一个一个建立起整个子问题的结果集.比如说在求解[[problems set:LCS problem|LCS problem]]时可以使用Memoization求解.
+
+
+[[https://www.geeksforgeeks.org/dynamic-programming-set-1/|GFG链接]]
+
+
+
+
+
+
+
+
+
+

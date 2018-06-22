@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-06-22T20:12:20+08:00
+
+====== 数据结构与算法 ======
+创建日期 星期五 22 六月 2018
+
+这个笔记是为了记录不同算法思想的细节.现在接触的算法思想有:
+[[数据结构与算法:分治法|1. divide and conquer 分治法]]
+[[数据结构与算法:动态规划法|2. Dynamic Programming 动态规划法]]
