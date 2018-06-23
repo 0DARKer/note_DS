@@ -1,0 +1,20 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-06-23T08:07:08+08:00
+
+====== LIS problem ======
+创建日期 星期六 23 六月 2018
+
+LIS问题全名为longest increasing subsequence .
+
+以下是LIC问题的solution ,分别使用的是recursion 和 Tabulation方式.
+[[./LIC.cpp]] 
+[[./LIC2.cpp]] 
+解决思路:
+a[0,..,n-1]表示输入数组,L[i]表示a[0,..i]的最大增数长.
+然后,L[i]可以用递归如下表示:
+	L(i)=1+max(L(j)) where 0<j<i and arr[j]<arr[i];or
+	L(i)=1,if no such j exists.
+我们需要最终找到max(L(i)).
+
+

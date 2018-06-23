@@ -21,9 +21,30 @@ Creation-Date: 2018-06-22T20:20:35+08:00
 1. Memoization(top down)
 2. Tabulation (Bottom UP)
 两种方式分别由上至下和由下至上对结果进行记录.但是Memoization只是按需记录数值,相当于建立一个备忘录.而Tabulation是一个一个建立起整个子问题的结果集.比如说在求解[[problems set:LCS problem|LCS problem]]时可以使用Memoization求解.
-
-
+solving_the_problem :
+[[Problems set:LIS_problem|LIS_problem]]
+[[problems set:LCS problem|LCS problem]]
+reference:
 [[https://www.geeksforgeeks.org/dynamic-programming-set-1/|GFG链接]]
+
+== 最优子结构 ==
+一个给定的问题具有最优子结构如果一个给定问题的最优解答能够通过使用子问题的最优解答解出
+比如说最短路径问题可以通过求两点之间的子最短路径来解决.求解最短路径问题如下算法:
+[[Problems set:shortest path|Floyd-Warshall]]
+[[Problems set:shortest path|Bellman-Ford]]
+但是在求解最长路径时不能用最优子结构来求.在求解最长子结构时,结构之间存在回路.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
